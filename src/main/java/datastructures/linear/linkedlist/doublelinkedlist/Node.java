@@ -1,11 +1,19 @@
 package datastructures.linear.linkedlist.doublelinkedlist;
 
+
+//Double LinkedList Node Structure with two pointers.
 public class Node<T> {
+
+    //Pointer to Previous Node.
     private Node previous;
+
+    //Pointer to Next Node.
     private Node next;
+
+    //Node Value
     private T data;
 
-    public Node(T data){
+    public Node(T data) {
         this.data = data;
     }
 

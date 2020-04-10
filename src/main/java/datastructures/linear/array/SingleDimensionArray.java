@@ -1,9 +1,6 @@
 package datastructures.linear.array;
 
-import javax.sound.midi.SysexMessage;
-
 public class SingleDimensionArray {
-
 
     private int[] arr;
 
@@ -30,34 +27,38 @@ public class SingleDimensionArray {
             }
         }
     }
-    public int getValue(int index){
-        if ((arr == null || arr.length == 0 )|| index >=arr.length) {
+
+    public int getValue(int index) {
+        if (arr == null || arr.length == 0) {
             System.out.println("Empty Array!");
-            return 0;
-        }else{
+            return -1;
+        } else if (index >= arr.length) {
+            System.out.println("Index out of range!!");
+            return -1;
+        } else {
             return arr[index];
         }
     }
 
-    public void searchValue(int value){
-        int index  = -1;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==value) {
+    public void searchValue(int value) {
+        int index = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == value) {
                 index = i;
             }
         }
-        if(index==-1){
+        if (index == -1) {
             System.out.println("Value not found in the array");
-        }else{
-            System.out.println("Value found at index : "+index);
+        } else {
+            System.out.println("Value found at index : " + index);
         }
     }
 
-    public void deleteValue(int index){
-        if ((arr == null || arr.length == 0 )|| index >=arr.length) {
+    public void deleteValue(int index) {
+        if ((arr == null || arr.length == 0) || index >= arr.length) {
             System.out.println("Array not initialize or invalid index");
-        }else{
-             arr[index]=0;
+        } else {
+            arr[index] = 0;
         }
     }
 }

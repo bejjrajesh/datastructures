@@ -28,9 +28,8 @@ public class BucketSort {
             buckets[k] =  new ArrayList<>();
         }
 
-        //Iterate through all the values in the array and store them in appropriate bucket.
+        //Iterate through all the values in the array and put it in the right bucket.
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
             double bucketLocationValue = Math.ceil(array[i] * (numberOfBuckets-1) / maxValue);
             int bucketLocation = Double.valueOf(bucketLocationValue).intValue();
             buckets[bucketLocation].add(array[i]);
@@ -66,8 +65,12 @@ public class BucketSort {
     public void print() {
 
         //Iterate through the Array and Print the values.
+        System.out.println(" ---- ---- ---- ---- ---- ---- ---- ---- ----");
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+"\t");
+            System.out.print(" | " + array[i]);
         }
+        System.out.print(" |");
+
+        System.out.println("\n ---- ---- ---- ---- ---- ---- ---- ---- ----");
     }
 }

@@ -13,11 +13,8 @@ public class BinaryTreeMain {
         tree.createNode(700);
         System.out.println(tree.searchData(400));
         System.out.println(tree.searchData(420));
-        System.out.println("Traversing Tree in PreOrderTraversal");
         tree.doPreOrderTraversal();
-        System.out.println("Traversing Tree in InOrderTraversal");
         tree.doInOrderTraversal();
-        System.out.println("Traversing Tree in PostOrderTraversal");
-        tree.doPreOrderTraversal();
+        tree.doPostOrderTraversal();
     }
 }

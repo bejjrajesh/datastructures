@@ -12,7 +12,7 @@ public class BubbleSort {
 
     public void sort(){
 
-        // This iteration cause every element to be in right place.
+        // Every iteration causes max element to be moved to right most side.
         for(int i=0; i<arr.length; i++) {
 
             // Check two elements at a time and swap if there are less than.

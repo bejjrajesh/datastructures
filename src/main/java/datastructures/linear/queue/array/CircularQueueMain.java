@@ -7,20 +7,20 @@ public class CircularQueueMain {
         System.out.println("Is Queue Empty : "+ cQueue.isQueueEmpty());
         System.out.println("Is Queue Full : "+ cQueue.isQueueFull());
         cQueue.enQueue(100);
-        cQueue.printQueue();
+        cQueue.peek();
         cQueue.enQueue(200);
-        cQueue.printQueue();
+        cQueue.peek();
         cQueue.enQueue(300);
-        cQueue.printQueue();
+        cQueue.peek();
         cQueue.enQueue(400);
-        cQueue.printQueue();
+        cQueue.peek();
         cQueue.enQueue(500);
-        cQueue.printQueue();
+        cQueue.peek();
         cQueue.enQueue(600);
-        cQueue.printQueue();
-        cQueue.deQueue();
-        cQueue.printQueue();
+        cQueue.peek();
+        System.out.println("Removing Element from Queue : " + cQueue.deQueue());
+        cQueue.peek();
         cQueue.enQueue(400);
-        cQueue.printQueue();
+        cQueue.peek();
     }
 }
