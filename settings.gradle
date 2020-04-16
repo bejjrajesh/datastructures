@@ -1,2 +1,8 @@
 rootProject.name = 'datastructures'
+include 'linear-datastructures'
+include 'nonlinear-datastructures'
+include 'algorithms'
+include 'misc-algorithms'
+include 'sorting-algorithms'
+include 'searching-algorithms'
 
