@@ -1,13 +1,11 @@
 package datastructures.linear.array;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 /**
  * Driver Program for SingleDimensionArray.
  */
 public class SingleDimensionArrayMain {
 
-    public static void main(String[] args) throws InvalidArgumentException {
+    public static void main(String[] args)  {
         SingleDimensionArray array = new SingleDimensionArray(10);
         array.insertValueAtPosition(0, 100);
         array.insertValueAtPosition(1, 200);
